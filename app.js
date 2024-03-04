@@ -5,6 +5,10 @@ const exphbs = require('express-handlebars');
 const path = require('path');
 const handlebars = exphbs.create({});
 
+
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+
 app.use(express.static(path.join(__dirname, '/public')));
 
 const { categorias } = require("./models/Categoria");
