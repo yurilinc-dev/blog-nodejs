@@ -1,0 +1,21 @@
+<h3>Novo usuário: </h3>
+<div class="card">
+  <div class="card-body">
+    <form action="/admin/usuario/novo" method="post">
+        <div class="mb-3">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" name="nome" placeholder="Seu nome">
+        </div>
+        <div class="mb-3">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" name="email" placeholder="Endereço de E-mail">
+        </div>
+        <div class="mb-3">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" name="senha" placeholder="Digite sua senha">
+        </div>
+        <br />
+        <button type="submit" class="btn btn-success">Criar novo usuário</button>
+    </form>
+  </div>
+</div>
